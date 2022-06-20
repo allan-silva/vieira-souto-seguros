@@ -26,10 +26,18 @@
 .who_we_are > h2 {
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 0.750rem;
 }
 
 .who_we_are > h3 {
     font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.who_we_are > p {
+    margin-bottom: 0.750rem;
+    font-size: 0.875rem;
 }
 
 .who_we_are > h3::before {
@@ -37,27 +45,53 @@
     font-family: var(--material-font-family);
 }
 
+.values_item {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
 .values_item::before {
     content: "";
     font-family: var(--material-font-family);
+    margin-right: 0.750rem;
+    font-size: 1.5rem;
 }
 
-.values_item__customer::before {
+.values_item-customer::before {
     content: "support_agent";
 }
 
-.values_item__people::before {
+.values_item-people::before {
     content: "group";
 }
 
-.values_item__commitment::before {
+.values_item-commitment::before {
     content: "handshake";
 }
 
-.values_item__excelence::before {
+.values_item-excelence::before {
     content: "auto_awesome";
 }
 
-.values_item__transparency::before {
+.values_item-transparency::before {
     content: "straighten";
+}
+
+.social_stack__item::before {
+    content: "";
+}
+
+.social_stack__item-insta::before {
+    background-image: url(../img/instagram-ico.svg);
+}
+
+.social_stack__item-mail::before {
+    background-image: url(../img/mail-ico.svg);
+
+}
+
+.social_stack__item-whats::before {
+    background-image: url(../img/whatsapp-logo_icon-icons.com_57054\ 1.svg);
+
 }
