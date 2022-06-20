@@ -1,0 +1,9 @@
+.header {
+    padding-top: 0.750rem;
+    padding-bottom: 0.750rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    height: 44px;
+}

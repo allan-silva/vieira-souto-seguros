@@ -1,0 +1,50 @@
+@import url(_reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    --default-color: #1C3D9E;
+    --default-intermediate-color: #4775FF;
+    --default-grey-color: #313131;
+    --default-grey-intermediate-color: #D9D9D9;
+    --default-grey-light-color: #FAFAFA;
+
+    --default-font-family: 'Quicksand', sans-serif;
+    --material-font-family: 'Material Icons';
+}
+
+body {
+    color: var(--default-color);
+    font-family: var(--default-font-family);
+}
+
+.container {
+    padding-left: 0.750rem;
+    padding-right: 0.750rem;
+}
+
+.social_stack {
+    color: var(--default-grey-light-color);
+    font-weight: bold;
+    font-size: 0.8625rem;
+}
+
+.social_stack__item::before {
+    content: "";
+}
+
+.social_stack__item-insta::before {
+    content: url(../img/instagram-ico.svg);
+
+}
+
+.social_stack__item-mail::before {
+    content: url(../img/mail-ico.svg);
+
+}
+
+.social_stack__item-whats::before {
+    content: url(../img/whatsapp-logo_icon-icons.com_57054\ 1.svg);
+
+}

@@ -1,0 +1,63 @@
+.home-main {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.home-main__title {
+    color: var(--default-intermediate-color);
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.home-main__company_description {
+    color: var(--default-intermediate-color);
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.who_we_are {
+    color: var(--default-grey-light-color);
+    background-color: var(--default-intermediate-color);
+    padding: 1.5rem 0.750rem 1.5rem 0.750rem;
+}
+
+.who_we_are > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.who_we_are > h3 {
+    font-size: 1rem;
+}
+
+.who_we_are > h3::before {
+    content: "chevron_right";
+    font-family: var(--material-font-family);
+}
+
+.values_item::before {
+    content: "";
+    font-family: var(--material-font-family);
+}
+
+.values_item__customer::before {
+    content: "support_agent";
+}
+
+.values_item__people::before {
+    content: "group";
+}
+
+.values_item__commitment::before {
+    content: "handshake";
+}
+
+.values_item__excelence::before {
+    content: "auto_awesome";
+}
+
+.values_item__transparency::before {
+    content: "straighten";
+}
