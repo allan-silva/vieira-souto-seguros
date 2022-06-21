@@ -1,0 +1,22 @@
+.social_stack {
+    color: var(--default-grey-light-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.social_stack__item {
+    display: flex;
+    align-items: center;
+    font-size: 0.750rem;
+    margin-bottom: 0.875rem;
+}
+
+.social_stack__item::before {
+    content: "";
+    margin-right: 0.750rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}

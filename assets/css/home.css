@@ -17,6 +17,20 @@
     padding-top: 1.5rem;
 }
 
+.products__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card__top-bg-pet {
+    background-image: url("../img/card_seg_pet.jpg");
+}
+
+.card__top-bg-res {
+    background-image: url("../img/card_seg_res.jpg");
+}
+
 .who_we_are {
     color: var(--default-grey-light-color);
     background-color: var(--default-intermediate-color);
@@ -78,20 +92,15 @@
     content: "straighten";
 }
 
-.social_stack__item::before {
-    content: "";
-}
-
 .social_stack__item-insta::before {
-    background-image: url(../img/instagram-ico.svg);
+    background-image: url("../img/instagram-ico.svg");
 }
 
 .social_stack__item-mail::before {
-    background-image: url(../img/mail-ico.svg);
+    background-image: url("../img/mail-ico.svg");
 
 }
 
 .social_stack__item-whats::before {
-    background-image: url(../img/whatsapp-logo_icon-icons.com_57054\ 1.svg);
-
+    background-image: url("../img/whatsapp-logo_icon-icons.com.svg");
 }

@@ -1,4 +1,4 @@
-@import url(_reset.css);
+@import url('_reset.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -16,6 +16,7 @@
 
 body {
     color: var(--default-color);
+    background-color: var(--default-grey-light-color);
     font-family: var(--default-font-family);
 }
 
@@ -29,27 +30,4 @@ body {
 .container {
     padding-left: 0.750rem;
     padding-right: 0.750rem;
-}
-
-.social_stack {
-    color: var(--default-grey-light-color);
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.social_stack__item {
-    display: flex;
-    align-items: center;
-    font-size: 0.750rem;
-    margin-bottom: 0.875rem;
-}
-
-.social_stack__item::before {
-    content: "";
-    margin-right: 0.750rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-size: 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }

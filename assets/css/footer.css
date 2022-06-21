@@ -5,7 +5,7 @@
 }
 
 .footer__logo {
-    background-image: url(../img/logo-intemediate-default.svg);
+    background-image: url("../img/logo-intemediate-default.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -19,7 +19,7 @@
     text-align: center;
     font-weight: 400;
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 100rem;
 }
 
 .footer__copy > span {
