@@ -1,0 +1,23 @@
+.list_bg_text {
+    font-size: 1rem;
+    color: var(--default-grey-color);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    box-sizing: border-box;
+}
+
+.list_bg_text__item {
+    background-color: var(--default-grey-intermediate-color);
+    
+    padding: 12px 8px;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    box-shadow: 6px 6px 10px var(--default-box-shadow-color);
+}

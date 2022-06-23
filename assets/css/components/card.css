@@ -2,7 +2,7 @@
     background-color: var(--default-grey-light-color);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px var(--default-box-shadow-color);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-top: 12px;

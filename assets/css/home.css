@@ -91,16 +91,3 @@
 .values_item-transparency::before {
     content: "straighten";
 }
-
-.social_stack__item-insta::before {
-    background-image: url("../img/instagram-ico.svg");
-}
-
-.social_stack__item-mail::before {
-    background-image: url("../img/mail-ico.svg");
-
-}
-
-.social_stack__item-whats::before {
-    background-image: url("../img/whatsapp-logo_icon-icons.com.svg");
-}
