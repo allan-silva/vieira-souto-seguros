@@ -6,3 +6,19 @@
     border-radius: 8px;
     padding: 3px 8px 3px 8px;
 }
+
+.action-button {
+    font-size: 1.5rem;
+    color: var(--default-grey-light-color);
+    background-color: var(--default-intermediate-color);
+    padding: 0.5rem 0.750rem;
+
+    display: inline-block;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    border-color: var(--default-color);
+
+    text-align: center;
+    width: auto;
+}
