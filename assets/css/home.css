@@ -91,3 +91,9 @@
 .values_item-transparency::before {
     content: "straighten";
 }
+
+.home-main__company_destaque {
+    font-weight: bold;
+    margin: 24px 0;
+    text-align: center;
+}
