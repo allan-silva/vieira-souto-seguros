@@ -1,0 +1,16 @@
+.product > p, label {
+    font-size: 1.5rem;
+    margin: 6px 0;
+}
+
+.valor-destaque {
+    font-weight: bold;
+}
+
+#valor-aluguel {
+    text-align: right;
+}
+
+#btn-whats {
+    cursor: pointer;
+}
