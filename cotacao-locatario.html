@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/components/card.css">
         <link rel="stylesheet" href="assets/css/components/button.css">
         <link rel="stylesheet" href="assets/css/components/list.css">
+        <link rel="stylesheet" href="assets/css/components/input.css">
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/footer.css">
         <link rel="stylesheet" href="assets/css/product.css">
@@ -26,8 +27,11 @@
 
             <article class="product container">
                 <label>
-                    Valor do Aluguel R$
-                    <input id="valor-aluguel" type="text" value="0,00" maxlength="10" />
+                    Valor do Aluguel:
+                    <div class="input-text-container">
+                        <span class="input-text-container--prefix"></span>
+                        <input id="valor-aluguel" type="text" class="textbox-input" placeholder="0,00" maxlength="10" />
+                    </div>
                 </label>
             </article>
 
@@ -76,6 +80,12 @@
             valorComissaoSpan.innerHTML = zero;
 
             whatsButton.addEventListener("click", function() {
+
+                if (valorAluguelInput.value === "") {
+                    valorAluguelInput.focus();
+                    return false;
+                }
+
                 const text = `Estou entrando em contato referente a seguinte cotação:\n*Valor de cobertura* ${valorCoberturaSpan.innerHTML.replace(/(&nbsp;)*/g, ' ')}\n*Valor de cobertura aluguel* ${valorCoberturaAluguelSpan.innerHTML.replace(/(&nbsp;)*/g, ' ')}\n*Valor do seguro* ${valorSeguroSpan.innerHTML.replace(/(&nbsp;)*/g, ' ')}\n*Valor Aluguel* ${valorAluguelInput.value.replace(/(&nbsp;)*/g, ' ')}`;
 
                 if (isMobile)
@@ -107,10 +117,16 @@
 
                 const multiplicador = 200.0;
                 const multiplicadorAluguel = 6;
-                const porcentagemComissao = 0.15;
-                const taxa = 0.00071;
+                const porcentagemComissao = 0.13;
 
                 const cobertura = parsedValue * multiplicador;
+
+                let taxa = 0.00074;
+
+                if (cobertura <= 140000) {
+                    taxa = 0.00078;
+                }
+
                 const valorSeguro = cobertura * taxa;
                 const valorCoberturaAluguel = parsedValue * multiplicadorAluguel;
                 const valorComissao = porcentagemComissao * valorSeguro;
